@@ -1,0 +1,74 @@
+{
+	"name": "discord-invite-manager",
+	"version": "8.3.7",
+	"description": "",
+	"main": "./bin/bot.js",
+	"scripts": {
+		"start": "cross-env NODE_ENV=dev node scripts/dev-run.js",
+		"debug": "cross-env NODE_ENV=dev node scripts/dev-run.js debug",
+		"build": "tsc",
+		"lint": "tslint --project tsconfig.json --config tslint.json --format stylish",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"test/**/*.js\"",
+		"nxv": "node ./scripts/npm-exact-versions.js",
+		"docs": "node scripts/generate-docs.js"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run nxv && pretty-quick --staged"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SideProjectGuys/invite-manager-bot.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/SideProjectGuys/invite-manager-bot/issues"
+	},
+	"homepage": "https://docs.invitemanager.co/bot/",
+	"dependencies": {
+		"@sentry/node": "5.6.2",
+		"amqplib": "0.5.5",
+		"axios": "0.19.0",
+		"bufferutil": "4.0.1",
+		"chart.js": "2.8.0",
+		"chartjs-node": "1.7.1",
+		"chartjs-plugin-datalabels": "0.7.0",
+		"eris": "github:abalabahaha/eris#7163514ceedead2896617b1ed0e3046caeb54e24",
+		"eris-lavalink": "github:SideProjectGuys/eris-lavalink#8e3156a968033c1f037b5424dd46aacb8af76436",
+		"erlpack": "github:discordapp/erlpack",
+		"eventemitter3": "4.0.0",
+		"i18n": "0.8.3",
+		"iheart": "3.1.1",
+		"moment": "2.24.0",
+		"mysql2": "1.7.0",
+		"sequelize": "4.44.3",
+		"uws": "10.148.1",
+		"xmldoc": "1.1.2",
+		"ytdl-core": "0.29.7",
+		"zlib-sync": "0.1.5"
+	},
+	"devDependencies": {
+		"@sentry/cli": "1.47.2",
+		"@types/amqplib": "0.5.13",
+		"@types/i18n": "0.8.6",
+		"@types/node": "12.7.8",
+		"@types/sequelize": "4.28.5",
+		"@types/xmldoc": "1.1.4",
+		"cross-env": "6.0.0",
+		"docsify": "4.9.4",
+		"docsify-cli": "4.3.0",
+		"fs-extra": "8.1.0",
+		"husky": "3.0.7",
+		"prettier": "1.18.2",
+		"pretty-quick": "1.11.1",
+		"tslint": "5.20.0",
+		"tslint-config-prettier": "1.18.0",
+		"typescript": "3.6.3",
+		"typestrict": "1.0.2"
+	},
+	"engines": {
+		"node": ">=10.16.3 <12"
+	}
+}
