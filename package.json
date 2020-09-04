@@ -43,7 +43,7 @@
 		"iheart": "3.1.1",
 		"moment": "2.24.0",
 		"mysql2": "1.7.0",
-		"sequelize": "4.44.3",
+		"sequelize": "5.15.1",
 		"uws": "10.148.1",
 		"xmldoc": "1.1.2",
 		"ytdl-core": "0.29.7",
