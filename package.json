@@ -57,7 +57,7 @@
 		"@types/sequelize": "4.28.5",
 		"@types/xmldoc": "1.1.4",
 		"cross-env": "6.0.0",
-		"docsify": "4.9.4",
+		"docsify": "4.12.0",
 		"docsify-cli": "4.3.0",
 		"fs-extra": "8.1.0",
 		"husky": "3.0.7",
